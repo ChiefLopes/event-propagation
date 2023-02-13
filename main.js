@@ -29,5 +29,10 @@ document.querySelector('.button').addEventListener(
        'click', (e) => {
            e.stopPropagation()
              console.log(e.target.getAttribute("id") + " is clicked");
+
+            //  Target changes to red when clicked
+             e.target.style.backgroundColor = 'red';
        }, true
     )
+
+    
